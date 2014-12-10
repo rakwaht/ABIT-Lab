@@ -1,0 +1,3 @@
+set term png
+set output "990.png"
+plot "<grep c0 clustering" using 2:3 title "Cluster 0","<grep c1 clustering" using 2:3 title "Cluster 1","<grep c2 clustering" using 2:3 title "Cluster 2","<grep c3 clustering" using 2:3 title "Cluster 3","<grep p0 clustering" using 2:3 title "Prototype 0" ps 10,"<grep p1 clustering" using 2:3 title "Prototype 1" ps 10,"<grep p2 clustering" using 2:3 title "Prototype 2" ps 10,"<grep p3 clustering" using 2:3 title "Prototype 3" ps 10, "lines" with lines linetype 1
